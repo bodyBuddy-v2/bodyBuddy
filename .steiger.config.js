@@ -1,4 +1,3 @@
-// ./steiger.config.js
 import fsd from "@feature-sliced/steiger-plugin";
 import { defineConfig } from "steiger";
 

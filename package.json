@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint & npx steiger ./src"
   },
   "dependencies": {
     "@feature-sliced/steiger-plugin": "^0.5.4",

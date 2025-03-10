@@ -1,6 +1,6 @@
 import { array, object, string } from "yup";
 
-import { city, SexType, UserFormKey } from "@/shared";
+import { city, SexType, UserFormKey } from "../../../shared";
 
 export const signUpFormSchema = () => {
   return object().shape({

@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint & npx steiger ./src"
+    "lint": "next lint"
   },
   "dependencies": {
     "@feature-sliced/steiger-plugin": "^0.5.4",
@@ -30,10 +30,10 @@
     "eslint": "^9.19.0",
     "eslint-config-next": "15.1.6",
     "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-fsd-lint": "^1.0.7",
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-unused-imports": "^4.1.4",
-    "steiger": "^0.5.5",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.22.0"
   },

@@ -1,4 +1,4 @@
-import { CategoryList, GoalsList, OptionValue } from "../types";
+import { CategoryList, GoalsList, OptionValue } from "@/shared/types";
 
 export const exerciseList: OptionValue<CategoryList>[] = [
   { label: "PT", value: CategoryList.pt },

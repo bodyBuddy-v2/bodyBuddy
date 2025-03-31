@@ -1,4 +1,5 @@
-import { UserFormKey } from "../constants";
+import { UserFormKey } from "@/shared/constants";
+
 import { SexType } from "./user";
 
 export type OptionValue<T> = {

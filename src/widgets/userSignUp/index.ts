@@ -1,3 +1,1 @@
-import UserSignUp from "./ui";
-
-export { UserSignUp };
+export * from "./ui";

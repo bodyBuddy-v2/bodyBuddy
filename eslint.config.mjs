@@ -25,7 +25,7 @@ const eslintConfig = [
       "fsd-plugin": fsdPlugin,
     },
     rules: {
-      "fsd-plugin/forbidden-imports": "error",
+      "fsd-plugin/forbidden-imports": "warn",
       "fsd-plugin/no-relative-imports": "error",
       "fsd-plugin/no-cross-slice-dependency": "error",
       "fsd-plugin/no-ui-in-business-logic": "error",

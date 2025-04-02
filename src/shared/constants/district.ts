@@ -1,4 +1,7 @@
-export const district = {
+export type districtType = {
+  [index: string]: string[];
+};
+export const district: districtType = {
   강원도: ["강릉시", "동해시", "삼척시", "속초시", "원주시", "춘천시", "태백시", "홍천군", "횡성군"],
   경기도: [
     "고양시",

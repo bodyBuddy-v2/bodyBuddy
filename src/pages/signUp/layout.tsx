@@ -1,3 +1,4 @@
+import { blue } from "@ant-design/colors";
 import { Flex, Typography } from "antd";
 import { PropsWithChildren } from "react";
 
@@ -17,9 +18,9 @@ const MemberSignUpLayout = ({ children, currentStep }: MemberSingUpLayoutProps) 
       <Typography.Title level={2}>
         <span>가장 쉬운</span>
         <br></br>
-        <span style={{ color: "#1677FF" }}>트레이닝</span> 시작해볼까요?
+        <span style={{ color: blue[5] }}>트레이닝</span> 시작해볼까요?
       </Typography.Title>
-      <Typography.Text strong style={{ color: "#1677FF", fontSize: "30px" }}>
+      <Typography.Text strong style={{ color: blue[5], fontSize: "30px" }}>
         STEP {currentStep}
       </Typography.Text>
       <Typography.Text

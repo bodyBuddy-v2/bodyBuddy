@@ -24,8 +24,8 @@ const UserSignUpStep1 = ({ next }: UserSignUpStep1Props) => {
           <>
             <Form.Item
               style={{ width: "100%" }}
-              validateStatus={fieldState.error ? "error" : ""}
-              help={fieldState.error ? fieldState.error.message : ""}
+              validateStatus={fieldState.error && "error"}
+              help={fieldState.error?.message || ""}
             >
               <Typography>닉네임</Typography>
               <Input {...field} placeholder="특수 문자 제외(2~5글자)" status={fieldState.error && "error"} />
@@ -38,10 +38,7 @@ const UserSignUpStep1 = ({ next }: UserSignUpStep1Props) => {
         control={control}
         render={({ field, fieldState }) => {
           return (
-            <Form.Item
-              validateStatus={fieldState.error ? "error" : ""}
-              help={fieldState.error ? fieldState.error.message : ""}
-            >
+            <Form.Item validateStatus={fieldState.error && "error"} help={fieldState.error?.message || ""}>
               <Typography>핸드폰 번호</Typography>
               <Input {...field} placeholder="핸드폰 번호 입력" status={fieldState.error && "error"} />
             </Form.Item>

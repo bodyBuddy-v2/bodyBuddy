@@ -59,7 +59,7 @@ const UserSignUpStep2 = ({ next }: UserSignUpStep2Props) => {
             <Form.Item
               style={{ width: "100%" }}
               validateStatus={fieldState.error ? "error" : ""}
-              help={fieldState.error ? fieldState.error.message : ""}
+              help={fieldState.error?.message || ""}
             >
               <Select
                 style={{ minWidth: "160px" }}
@@ -86,8 +86,8 @@ const UserSignUpStep2 = ({ next }: UserSignUpStep2Props) => {
           render={({ field, fieldState }) => (
             <Form.Item
               style={{ width: "100%" }}
-              validateStatus={fieldState.error ? "error" : ""}
-              help={fieldState.error ? fieldState.error.message : ""}
+              validateStatus={fieldState.error && "error"}
+              help={fieldState.error?.message || ""}
             >
               <Select
                 style={{ minWidth: "160px" }}

@@ -27,7 +27,7 @@ const UserSignUpStep3 = () => {
           <Form.Item
             style={{ width: "100%" }}
             validateStatus={errors[UserFormKey.GOALS] ? "error" : ""}
-            help={errors[UserFormKey.GOALS] ? errors[UserFormKey.GOALS]?.message : ""}
+            help={errors[UserFormKey.GOALS]?.message ?? ""}
           >
             <Typography.Text strong>운동 목적</Typography.Text>
             <Typography style={{ fontSize: "12px", color: "#7D7D7D", paddingBottom: "10px" }}>
@@ -60,7 +60,7 @@ const UserSignUpStep3 = () => {
         render={({ field }) => (
           <Form.Item
             validateStatus={errors[UserFormKey.CATEGORY] ? "error" : ""}
-            help={errors[UserFormKey.CATEGORY] ? errors[UserFormKey.CATEGORY]?.message : ""}
+            help={errors[UserFormKey.CATEGORY]?.message ?? ""}
           >
             <Typography.Text strong>관심 종목</Typography.Text>
             <Typography style={{ fontSize: "12px", color: "#7D7D7D", paddingBottom: "10px" }}>

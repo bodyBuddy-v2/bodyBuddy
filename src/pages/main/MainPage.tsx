@@ -1,3 +1,4 @@
+"use client";
 import { blue } from "@ant-design/colors";
 import { Flex, Typography } from "antd";
 import { useState } from "react";
@@ -6,7 +7,7 @@ import { TrainerProfileType } from "@/entities/trainer";
 
 import { TrainerProfile } from "./ui";
 
-const Main = () => {
+export const Main = () => {
   const [TestList, setTestList] = useState<TrainerProfileType[]>([
     {
       images: [

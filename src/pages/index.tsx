@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
       안녕하세요
-      <Link href={"/signUp/user"}>회원가입으로 이동</Link>
+      <Link href={"/main"}>메인으로 이동</Link>
     </div>
   );
 };

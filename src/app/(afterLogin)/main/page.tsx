@@ -6,7 +6,7 @@ import { useState } from "react";
 import { TrainerProfileType } from "@/entities/trainer";
 import { TrainerProfile } from "@/features/main/ui";
 
-export const Main = () => {
+const AfterLoginMain = () => {
   const [TestList, setTestList] = useState<TrainerProfileType[]>([
     {
       images: [
@@ -76,4 +76,4 @@ export const Main = () => {
   );
 };
 
-export default Main;
+export default AfterLoginMain;

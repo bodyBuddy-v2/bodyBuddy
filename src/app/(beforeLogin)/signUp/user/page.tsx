@@ -1,12 +1,11 @@
+"use client";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 
 import { signUpFormSchema } from "@/entities";
 import { IMemberFormData, UserFormKey } from "@/shared";
-import { UserSignUpStep1, UserSignUpStep2, UserSignUpStep3 } from "@/widgets";
-
-import MemberSignUpLayout from "../layout";
+import { SignUpTitle, UserSignUpStep1, UserSignUpStep2, UserSignUpStep3 } from "@/widgets";
 
 const UserSignUpPage = () => {
   const [step, setStep] = useState(1);
@@ -32,13 +31,13 @@ const UserSignUpPage = () => {
   });
 
   return (
-    <MemberSignUpLayout currentStep={step}>
+    <SignUpTitle currentStep={step}>
       <FormProvider {...formMethods}>
         {step === 1 && <UserSignUpStep1 next={nextStep} />}
         {step === 2 && <UserSignUpStep2 next={nextStep} />}
         {step === 3 && <UserSignUpStep3 />}
       </FormProvider>
-    </MemberSignUpLayout>
+    </SignUpTitle>
   );
 };
 

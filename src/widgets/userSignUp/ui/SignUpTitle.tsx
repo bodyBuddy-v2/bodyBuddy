@@ -6,7 +6,7 @@ type MemberSingUpLayoutProps = {
   currentStep: number;
 } & PropsWithChildren;
 
-const MemberSignUpLayout = ({ children, currentStep }: MemberSingUpLayoutProps) => {
+const SignUpTitle = ({ children, currentStep }: MemberSingUpLayoutProps) => {
   const comments = [
     "간단한 기본 정보를 입력해주세요",
     "상세 정보를 입력해주세요",
@@ -33,4 +33,4 @@ const MemberSignUpLayout = ({ children, currentStep }: MemberSingUpLayoutProps) 
   );
 };
 
-export default MemberSignUpLayout;
+export default SignUpTitle;

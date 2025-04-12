@@ -2,7 +2,7 @@ import { Flex, Image, Tag, Typography } from "antd";
 import React from "react";
 
 import { TrainerProfileType } from "@/entities/trainer";
-export const TrainerProfile = (props: TrainerProfileType) => {
+const TrainerProfile = (props: TrainerProfileType) => {
   const { images, name, profile, category, cost } = props;
   return (
     <>

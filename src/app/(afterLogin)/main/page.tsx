@@ -4,8 +4,7 @@ import { Flex, Typography } from "antd";
 import { useState } from "react";
 
 import { TrainerProfileType } from "@/entities/trainer";
-
-import { TrainerProfile } from "./ui";
+import { TrainerProfile } from "@/features/main/ui";
 
 export const Main = () => {
   const [TestList, setTestList] = useState<TrainerProfileType[]>([
@@ -50,7 +49,7 @@ export const Main = () => {
       cost: "25,000",
     },
   ]);
-
+  console.log(Typography);
   return (
     <>
       <Flex vertical style={{ height: "100%", flex: "auto" }}>

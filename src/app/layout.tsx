@@ -1,5 +1,11 @@
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { Layout } from "antd";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "바디버디",
+  description: "쉬운 1:1 트레닝의 시작",
+};
 
 export default function RootLayout({
   children,
@@ -8,11 +14,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <head>
-        <meta charSet="utf-8" />
-        <title>바디버디</title>
-        <link rel="icon" href="/favicon/favicon.ico" />
-      </head>
       <body style={{ margin: 0 }}>
         <AntdRegistry>
           <Layout

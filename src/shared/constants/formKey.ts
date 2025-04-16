@@ -8,3 +8,11 @@ export const UserFormKey = {
   GOALS: "goals",
   CATEGORY: "category",
 } as const;
+
+export const OptionModalFormKey = {
+  CITY: "city",
+  DISTRICT: "district",
+  SEX: "sex",
+  GOALS: "goals",
+  CATEGORY: "category",
+} as const;

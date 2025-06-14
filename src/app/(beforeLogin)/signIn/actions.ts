@@ -18,4 +18,5 @@ export const signIn = async (provider: Provider, redirectUrl: string): Promise<v
   redirect(data.url as string);
 };
 
-export const signInGoogle = async () => signIn("google", process.env.NEXT_PUBLIC_GOOGLE_REDIRECT_CALLBACK as string);
+export const signInGoogle = async () => signIn("google", process.env.NEXT_PUBLIC_AUTH_REDIRECT_CALLBACK as string);
+export const signInKaKao = async () => signIn("kakao", process.env.NEXT_PUBLIC_AUTH_REDIRECT_CALLBACK as string);

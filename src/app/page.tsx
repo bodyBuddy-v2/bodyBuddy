@@ -1,6 +1,10 @@
 import Link from "next/link";
 
+import { createClient } from "@/shared/lib/supabase/server";
+
 const Home = () => {
+  const supabase = createClient();
+
   return (
     <div>
       안녕하세요

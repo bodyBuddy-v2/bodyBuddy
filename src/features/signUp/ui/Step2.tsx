@@ -1,3 +1,4 @@
+"use client";
 import { Button, Flex, Form, Input, Radio, Select, Typography } from "antd";
 import { useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";

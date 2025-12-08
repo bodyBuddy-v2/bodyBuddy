@@ -1,12 +1,20 @@
+"use client";
 import { CommentOutlined, HomeOutlined, SettingOutlined, UserOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
 import { usePathname, useRouter } from "next/navigation";
 import { useMemo } from "react";
+
 type MenuItem = Required<MenuProps>["items"][number];
+const items: MenuItem[] = [
+  { label: "Home", key: "/", icon: <HomeOutlined /> },
+  { label: "Chat", key: "/chat", icon: <CommentOutlined />, disabled: true },
+  { label: "Board", key: "/board", icon: <SettingOutlined /> },
+  { label: "My Page", key: "/mypage", icon: <UserOutlined /> },
+];
 
 export const HomeMenu = () => {
-  const pathname = usePathname(); // 현재 경로 가져오기
+  const pathname = usePathname();
   const router = useRouter();
 
   const selectedKey = useMemo(() => {
@@ -21,30 +29,6 @@ export const HomeMenu = () => {
   const handleMenuClick = (e: { key: string }) => {
     router.push(e.key); // 선택한 메뉴의 경로로 이동
   };
-
-  const items: MenuItem[] = [
-    {
-      label: "Home",
-      key: "/",
-      icon: <HomeOutlined />,
-    },
-    {
-      label: "Chat",
-      key: "app",
-      icon: <CommentOutlined />,
-      disabled: true,
-    },
-    {
-      label: "Board",
-      key: "board",
-      icon: <SettingOutlined />,
-    },
-    {
-      label: "My Page",
-      key: "mypage",
-      icon: <UserOutlined />,
-    },
-  ];
 
   return (
     <>

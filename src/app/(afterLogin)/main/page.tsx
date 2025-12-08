@@ -1,13 +1,7 @@
-"use client";
-import { blue } from "@ant-design/colors";
-import { Flex, Typography } from "antd";
-import { useState } from "react";
-
 import { TrainerProfileType } from "@/entities/trainer";
-import { TrainerProfile } from "@/features/main/ui";
 
 const AfterLoginMain = () => {
-  const [TestList, setTestList] = useState<TrainerProfileType[]>([
+  const TestList: TrainerProfileType[] = [
     {
       images: [
         {
@@ -48,11 +42,12 @@ const AfterLoginMain = () => {
       category: "PT",
       cost: "25,000",
     },
-  ]);
-  console.log(Typography);
+  ];
+
   return (
     <>
-      <Flex vertical style={{ height: "100%", flex: "auto" }}>
+      <div>여기는 main 화면이에요</div>
+      {/* <Flex vertical style={{ height: "100%", flex: "auto" }}>
         <Typography.Title level={2}>
           <Typography.Text strong style={{ color: blue[5], fontSize: "30px" }}>
             손흥민
@@ -71,7 +66,7 @@ const AfterLoginMain = () => {
             cost={list.cost}
           />
         ))}
-      </Flex>
+      </Flex> */}
     </>
   );
 };
